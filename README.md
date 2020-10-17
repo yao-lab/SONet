@@ -41,6 +41,7 @@ $ python main.py --model odenet_tq --channel 64 --nb 1 1 1 1 --aug True lr 0.01 
 
 #### Arguments:
 * ```model```: different models, SONet, ResNet10 or SOBlock
+* ```solver```: 'dopri5', 'explicit_adams', 'fixed_adams', 'adams', 'tsit5', 'bosh3', 'euler', 'midpoint', 'rk4'
 * ```channel```: input channel
 * ```nb```: number of blocks for each layer
 * ```strides```: strides for each layer
