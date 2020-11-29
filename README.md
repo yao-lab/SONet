@@ -1,9 +1,9 @@
 
-# Adversarial Robustness of Stabilized NeuralODEs Might be from Obfuscated Gradients
+# Adversarial Robustness of Stabilized Neural ODE Might be from Obfuscated Gradients
 
 
 ## Introduction
-The codes for [Adversarial Robustness of Stabilized NeuralODEs Might be from Obfuscated Gradients](https://arxiv.org/abs/2009.13145) by Yifei Huang, Yaodong Yu, Hongyang Zhang, Yi Ma, Yuan Yao.
+The codes for Adversarial Robustness of Stabilized Neural ODE Might be from Obfuscated Gradients
 
 ## Prerequisites
 * Python 3.7.0
