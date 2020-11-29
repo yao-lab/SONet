@@ -37,7 +37,6 @@ class Attacker:
                     f"batch id {i}: correct {correct}/{x.size()[0]}, {total_correct / n:.4f}, grad_norm: {grad_norm / n:.4f}")
             if i >= num_batchs - 1:
                 return 100 * total_correct / n, grad_norm / n
-            break
         return 100 * total_correct / len(self.data_loader.dataset), grad_norm / n
 
     def attacker_linf(self, x_nat, target):
@@ -46,7 +45,6 @@ class Attacker:
         x = copy.deepcopy(x_nat).detach() + 0. * torch.randn_like(x_nat)
         norm = 0
         for i in range(self.num_steps):
-            print(f"PGD {i} step")
             x.requires_grad_()
             with torch.enable_grad():
                 loss = F.cross_entropy(self.model(x), target)
@@ -103,7 +101,7 @@ if __name__ == '__main__':
     parse.add_argument('--l2_e', default=0.5, type=float, help='l2 epsilion')
     parse.add_argument('--l2_ns', default=20, type=int, help='l2 num_steps')
     parse.add_argument('--data', default='cifar10', choices=['cifar10', 'mnist'])
-    parse.add_argument('--b', default=1, type=int, help='batch_size')
+    parse.add_argument('--b', default=100, type=int, help='batch_size')
     parse.add_argument('--gpuid', default='3', type=str)
 
     args, _ = parse.parse_known_args()

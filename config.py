@@ -14,7 +14,7 @@ model_args.add_argument('--channel', default=64, type=int)
 model_args.add_argument('--nb', default=[2, 2, 2, 2], help='number of blocks', type=int, nargs='+')
 model_args.add_argument('--strides', default=[1, 2, 2, 2], help='strides for each block', type=int, nargs='+')
 model_args.add_argument('--solver', default='dopri5', choices=['explicit_adams', 'fixed_adams', 'adams',
-                                                               'tsit5', 'dopri5', 'bosh3', 'euler', 'midpoint', 'rk4'],
+                                                               'tsit5', 'dopri5', 'bosh3', 'euler', 'midpoint', 'rk4','adaptive_heun'],
                         type=str)
 model_args.add_argument('--adj', default=False, type=eval, choices=[True, False], help='adjoint for solver')
 model_args.add_argument('--tol', default=0.1, type=float, help='tol for solver')
