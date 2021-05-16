@@ -4,7 +4,7 @@
 
 ## Introduction
 Reproducing source codes for 
-> Yifei Huang, Yaodong Yu, Hongyang Zhang, Yi Ma, Yuan Yao, Adversarial Robustness of Stabilized Neural ODE Might be from Obfuscated Gradients, [arXiv:2009.13145](https://arxiv.org/abs/2009.13145), Mathematical and Scientific Machine Learning (MSML), August 16-19, 2021.
+> Yifei Huang, Yaodong Yu, Hongyang Zhang, Yi Ma, Yuan Yao, Adversarial Robustness of Stabilized Neural ODE Might be from Obfuscated Gradients, Mathematical and Scientific Machine Learning (MSML), August 16-19, 2021. [arXiv:2009.13145](https://arxiv.org/abs/2009.13145)
 
 ## Prerequisites
 * Python 3.7.0
